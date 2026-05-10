@@ -25,11 +25,11 @@ export default function Features() {
     ];
 
     return (
-        <section className="bg-[#050505] px-4 py-16">
+        <section className="bg-[#030303] w-full p-20">
             <div className="max-w-7xl mx-auto">
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
 
                     {content.map((item) => {
                         const Icon = item.icon;
@@ -37,23 +37,23 @@ export default function Features() {
                         return (
                             <Card
                                 key={item.id}
-                                className="bg-white/5 border-white/10 backdrop-blur-xl hover:scale-[1.02] transition duration-300"
+                                className="bg-white/[0.03] border-white/8 backdrop-blur-xl hover:bg-white/[0.06] hover:border-white/12 hover:scale-[1.02] transition-all duration-300"
                             >
-                                <CardHeader className="items-center text-center space-y-4">
+                                <CardHeader className="items-center text-center space-y-4 pt-8">
 
                                     {/* Icon */}
-                                    <div className="flex items-center justify-center w-14 h-14 rounded-full bg-yellow-400/10 border border-yellow-400/20">
-                                        <Icon className="w-6 h-6 text-yellow-300" />
+                                    <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-[#d4af37]/8 border border-[#d4af37]/15">
+                                        <Icon className="w-6 h-6 text-[#d4af37]" />
                                     </div>
 
                                     {/* Title */}
-                                    <CardTitle className="text-white text-lg">
+                                    <CardTitle className="text-white text-lg font-medium">
                                         {item.title}
                                     </CardTitle>
 
                                 </CardHeader>
 
-                                <CardContent className="text-center text-sm text-slate-400 leading-7">
+                                <CardContent className="text-center text-sm text-white/45 leading-7 pb-8">
                                     {item.des}
                                 </CardContent>
                             </Card>

@@ -13,18 +13,18 @@ export default function Header() {
     ];
 
     return (
-<header className="sticky top-0 z-50 bg-[#050505]/80 backdrop-blur-xl border-b border-[#d4af37]/10">
-  <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+<header className="sticky top-0 z-50 relative overflow-hidden bg-[#030303] backdrop-blur-2xl border-b border-white/5">
+  <div className="max-w-7xl mx-auto px-5 py-3.5 flex items-center justify-between">
 
     <Logo />
 
     <nav className="hidden md:block">
-      <ul className="flex items-center gap-8 text-sm">
+      <ul className="flex items-center gap-9 text-sm">
         {links.map((link) => (
           <li key={link.href}>
             <Link
               href={link.href}
-              className="text-white/70 hover:text-[#f5d76e] transition"
+              className="text-white/60 hover:text-[#d4af37] transition-all duration-300 text-[15px] font-medium"
             >
               {link.name}
             </Link>
@@ -33,7 +33,7 @@ export default function Header() {
       </ul>
     </nav>
 
-    <Button className="bg-gradient-to-r from-[#d4af37] to-[#f5d76e] text-black hover:opacity-90 shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+    <Button className="bg-gradient-to-r from-[#c9a227] via-[#d4af37] to-[#e8c547] text-black hover:from-[#d4af37] hover:via-[#e0bc3f] hover:to-[#f0d06a] hover:shadow-[0_4px_20px_rgba(212,175,55,0.35)] transition-all duration-300 font-semibold text-sm px-6">
       حمل التطبيق
     </Button>
 

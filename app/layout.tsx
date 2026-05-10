@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter  , Tajawal} from "next/font/google";
+import { Geist, Geist_Mono, Inter, Tajawal } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 const tajawal = Tajawal(
   {
     variable: "--font-tajawal",
@@ -30,10 +30,12 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+
+      dir="rtl"
+      lang="ar"
       className={cn("h-full", "antialiased", tajawal.className, "font-sans")}
     >
-      
+
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

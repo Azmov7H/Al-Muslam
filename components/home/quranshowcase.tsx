@@ -24,21 +24,21 @@ export default function QuranShowcase() {
   ];
 
   return (
-    <section className="bg-[#050505] py-20 px-4">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <section className="bg-[#030303] py-24 px-4">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
 
         {/* Quran Image */}
         <div className="flex justify-center">
-          <div className="relative p-[2px] rounded-[2rem] bg-gradient-to-br from-[#d4af37] via-[#f5d76e] to-[#b8962e] shadow-[0_0_40px_rgba(212,175,55,0.25)]">
+          <div className="relative p-[2px] rounded-[2rem] bg-gradient-to-br from-[#c9a227] via-[#d4af37] to-[#b8962e] shadow-[0_0_50px_rgba(212,175,55,0.15)]">
 
             {/* Frame */}
-            <div className="bg-[#0a0a0d] rounded-[2rem] p-4">
+            <div className="bg-[#0a0a0d] rounded-[2rem] p-5">
 
               {/* Glow */}
-              <div className="absolute inset-0 rounded-[2rem] bg-yellow-400/10 blur-2xl" />
+              <div className="absolute inset-0 rounded-[2rem] bg-[#d4af37]/5 blur-3xl" />
 
               <Image
-                src="/logo.png" 
+                src="/logo.png"
                 alt="القرآن الكريم"
                 width={320}
                 height={500}
@@ -52,29 +52,29 @@ export default function QuranShowcase() {
         <div dir="rtl" className="text-right space-y-8">
 
           <div className="space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight">
               تجربة قراءة القرآن بأسلوب عصري
             </h2>
-            <p className="text-slate-400 leading-7">
+            <p className="text-white/40 leading-7 text-lg">
               تصميم يجمع بين الفخامة والبساطة ليمنحك تجربة روحانية هادئة ومريحة في أي وقت.
             </p>
           </div>
 
           {/* Features */}
-          <div className="space-y-4">
+          <div className="space-y-3">
             {features.map((item, i) => {
               const Icon = item.icon;
 
               return (
                 <Card
                   key={i}
-                  className="bg-white/5 border-white/10 backdrop-blur-xl"
+                  className="bg-white/[0.03] border-white/8 backdrop-blur-xl hover:bg-white/[0.06] hover:border-white/12 transition-all duration-300"
                 >
                   <CardContent className="flex items-start gap-4 p-4">
 
                     {/* Icon */}
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/20">
-                      <Icon className="w-5 h-5 text-[#f5d76e]" />
+                    <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-[#d4af37]/8 border border-[#d4af37]/15">
+                      <Icon className="w-5 h-5 text-[#d4af37]" />
                     </div>
 
                     {/* Text */}
@@ -82,7 +82,7 @@ export default function QuranShowcase() {
                       <p className="text-white font-medium">
                         {item.title}
                       </p>
-                      <p className="text-sm text-slate-400 mt-1">
+                      <p className="text-sm text-white/45 mt-1">
                         {item.desc}
                       </p>
                     </div>
