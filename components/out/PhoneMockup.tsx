@@ -20,8 +20,8 @@ export default function PhoneMockup() {
 
             {/* Status bar */}
             <div className="absolute top-0 left-0 w-full flex justify-between px-6 py-3 text-[10px] text-gray-400 z-10">
-              <span>9:41</span>
-              <span>📶 🔋</span>
+              <span className="">7:40</span>
+
             </div>
 
             {/* App UI */}
